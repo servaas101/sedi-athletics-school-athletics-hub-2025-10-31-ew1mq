@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sedi Athletics - School Athletics Hub. Track every race. Celebrate every champion. Central results hub with verified data and easy uploads.">
+    <meta name="keywords" content="athletics, school sports, results, leaderboards, sports management">
+    <meta name="author" content="Sedi Athletics">
+    <title>Sedi Athletics — School Athletics Hub | Track Every Race</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-running text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">Sedi Athletics</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">FAQ</a>
+                <a href="https://sediathleticssports.co.za" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300" aria-label="Toggle menu">
+                <i class="fas fa-bars text-gray-900 text-xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 md:hidden">
+                <div class="flex flex-col space-y-4 p-4">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2">FAQ</a>
+                    <a href="https://sediathleticssports.co.za" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold text-center hover:shadow-lg transition-all duration-300">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 md:py-32 lg:py-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                    Sedi Athletics — School Athletics Hub
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-4 text-purple-100 max-w-3xl mx-auto">
+                    Track every race. Celebrate every champion.
+                </p>
+                <p class="text-lg md:text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    The ultimate platform for managing school athletics. From race tracking to leaderboard management, we've got everything your school needs to celebrate athletic excellence.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://sediathleticssports.co.za" class="btn-primary bg-white text-purple-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all duration-300 inline-block">
+                        Launch Your Hub
+                    </a>
+                    <a href="#features" class="btn-primary border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 inline-block">
+                        Explore Features
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Powerful Features Built for Athletics
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Everything you need to manage, track, and celebrate school athletics in one comprehensive platform.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Results Feature -->
+                <div class="feature-card bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-flag-checkered text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Race Results</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Real-time race result tracking with automatic timing integration. Capture every finish line moment and instantly update your community.
+                    </p>
+                </div>
+
+                <!-- Leaderboards Feature -->
+                <div class="feature-card bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Leaderboards</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Dynamic leaderboards that automatically rank athletes and teams. Display achievements and foster healthy competition across your school.
+                    </p>
+                </div>
+
+                <!-- Schools Feature -->
+                <div class="feature-card bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-school text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">School Profiles</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Dedicated school profiles showcasing your institution's athletic achievements, records, and history in one professional hub.
+                    </p>
+                </div>
+
+                <!-- Sponsors Feature -->
+                <div class="feature-card bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sponsor Management</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Easily manage and showcase your sponsors. Provide visibility to supporters and streamline partnership opportunities.
+                    </p>
+                </div>
+
+                <!-- Uploads Feature -->
+                <div class="feature-card bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cloud-upload-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Easy Uploads</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Streamlined bulk upload functionality. Import results, athlete data, and event information in minutes, not hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Sedi Athletics?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Experience the advantages that make us the preferred choice for schools across the region.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Central Hub Benefit -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-10 border border-purple-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-cube text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Central Results Hub</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Consolidate all your athletics data in one unified platform. No more scattered spreadsheets or disconnected systems. Access comprehensive race results, historical data, and performance analytics from anywhere, anytime.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Unified data management</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>24/7 accessibility</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Historical record keeping</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Data Benefit -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-10 border border-purple-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Verified Data Integrity</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Trust in the accuracy of your athletic records. Our verification system ensures data integrity and prevents unauthorized changes. Maintain official records that stand up to scrutiny and build confidence in your results.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Data validation checks</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Audit trail logging</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Official record certification</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easy Uploads Benefit -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-10 border border-purple-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-lightning-bolt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Effortless Data Uploads</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Save hours of manual data entry. Our intelligent upload system processes bulk files instantly. Whether it's race results, athlete information, or event details, importing data has never been easier.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Bulk import capability</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Multiple file formats</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                                    <span>Automatic error detection</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Sedi Athletics
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Sedi Athletics was founded with a simple yet powerful vision: to revolutionize how schools manage and celebrate their athletic programs. Born from the passion of sports enthusiasts and technology innovators, our platform emerged from recognizing the gap between the importance of school athletics and the outdated systems used to manage them. We started with a small team dedicated to creating a solution that would empower schools, coaches, and athletes to focus on what matters most—achieving excellence and celebrating every victory, no matter how big or small.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Today, Sedi Athletics is committed to our core mission: democratizing access to professional-grade athletics management tools for schools of all sizes. We believe every athlete deserves recognition, every coach deserves efficient tools, and every school deserves a platform that celebrates their athletic heritage. Our core values of integrity, innovation, and inclusivity guide every decision we make. We're not just building software; we're building a community that values athletic achievement and the transformative power of sports in education.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Loved by Schools Nationwide
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See what coaches, administrators, and athletes are saying about Sedi Athletics.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "Sedi Athletics has completely transformed how we manage our school's track and field program. What used to take us hours to organize is now done in minutes. The leaderboard feature has motivated our athletes like never before, and the real-time results updates keep parents engaged throughout the season. Highly recommend!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-gray-900">Coach Michael Thompson</p>
+                        <p class="text-gray-600 text-sm">Head Track & Field Coach, Riverside High School</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "As an athletic director managing multiple sports programs, I needed a centralized hub for all our data. Sedi Athletics delivers exactly that. The bulk upload feature saved us countless hours during registration, and our sponsors love how easily they can track their visibility. It's a game-changer for school administration."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-gray-900">Dr. Sarah Okonkwo</p>
+                        <p class="text-gray-600 text-sm">Athletic Director, Midtown Academy</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "I love seeing my name on the leaderboards! Sedi Athletics makes it so easy to track my progress throughout the season. The platform is intuitive, the results are always accurate, and it's amazing to see how our entire school's athletic achievements are celebrated in one place. This is what modern athletics management looks like."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-gray-900">Jessica Mwangi</p>
+                        <p class="text-gray-600 text-sm">Student Athlete, Cross Country & Track</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "We've been using Sedi Athletics for two seasons now, and it's proven to be an invaluable asset for our athletics program. The verified data system gives us confidence in our records, the upload functionality is seamless, and the customer support team is exceptional. It's refreshing to work with a platform that truly understands school athletics."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-gray-900">Principal James Adeyemi</p>
+                        <p class="text-gray-600 text-sm">School Principal, Eastside Secondary School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 md:py-32 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=600&fit=crop');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Transform Your School's Athletics?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Join hundreds of schools already using Sedi Athletics to celebrate their champions and manage their programs efficiently. Get started today and see the difference a modern platform makes.
+            </p>
+            <a href="https://sediathleticssports.co.za" class="btn-primary inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300">
+                Launch Your Hub Now
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Find answers to common questions about Sedi Athletics and how it can benefit your school.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <h3 class="text-lg font-semibold text-gray-900 text-left">
+                            How easy is it to migrate our existing data to Sedi Athletics?
+                        </h3>
+                        <i class="fas fa-chevron-down faq-icon text-purple-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden border-t border-gray-200 p-6 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Migration is seamless and straightforward. Our bulk upload feature supports multiple file formats (CSV, Excel, etc.), allowing you to import all your historical data in one go. Our technical team can also assist with the migration process to ensure nothing is lost. Most schools complete their migration within a few hours, and we provide detailed documentation and support every step of the way to make the transition as smooth as possible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <h3 class="text-lg font-semibold text-gray-900 text-left">
+                            Is Sedi Athletics suitable for schools of all sizes?
+                        </h3>
+                        <i class="fas fa-chevron-down faq-icon text-purple-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden border-t border-gray-200 p-6 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! Sedi Athletics is designed to scale with your needs. Whether you're a small school with a handful of athletes or a large institution with multiple sports programs and hundreds of participants, our platform adapts to your requirements. We offer flexible pricing plans and customizable features that grow with your program, ensuring you only pay for what you use while having access to professional-grade tools.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <h3 class="text-lg font-semibold text-gray-900 text-left">
+                            How do we ensure data security and privacy on the platform?
+                        </h3>
+                        <i class="fas fa-chevron-down faq-icon text-purple-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden border-t border-gray-200 p-6 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Data security is our top priority. We employ enterprise-grade encryption, regular security audits, and comply with all relevant data protection regulations. Your data is stored on secure servers with automatic backups, and we implement role-based access controls to ensure only authorized personnel can view or modify sensitive information. Our comprehensive privacy policy outlines exactly how your data is handled and protected.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <h3 class="text-lg font-semibold text-gray-900 text-left">
+                            Can we integrate Sedi Athletics with our existing school systems?
+                        </h3>
+                        <i class="fas fa-chevron-down faq-icon text-purple-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden border-t border-gray-200 p-6 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, we offer integration capabilities with many popular school management systems and platforms. Our API documentation is comprehensive, and our development team can work with your IT department to create custom integrations if needed. Whether you use a specific student information system or have unique requirements, we can typically find a solution that works seamlessly with your existing infrastructure.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <h3 class="text-lg font-semibold text-gray-900 text-left">
+                            What kind of support and training do you provide?
+                        </h3>
+                        <i class="fas fa-chevron-down faq-icon text-purple-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden border-t border-gray-200 p-6 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            We provide comprehensive support including onboarding training, detailed documentation, video tutorials, and a dedicated support team available via email and phone. We also offer webinars and workshops to help your team get the most out of the platform. Our goal is to ensure your success, and we're committed to providing the resources and guidance you need at every stage of your journey with Sedi Athletics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-running text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Sedi Athletics</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Empowering schools to celebrate athletic excellence through modern technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://sediathleticssports.co.za" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Get In Touch</h4>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:info@sediathleticssports.co.za" class="hover:text-purple-400 transition-colors duration-300">info@sediathleticssports.co.za</a>
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://sediathleticssports.co.za" class="hover:text-purple-400 transition-colors duration-300">sediathleticssports.co.za</a>
+                    </p>
+                    <a href="https://sediathleticssports.co.za" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Sedi Athletics. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Terms</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
